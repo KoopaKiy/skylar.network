@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Skylar Networks</title>
+  <meta name="description" content="A holding place for projects">
+  <meta name="author" content="Skylar">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="section general">
+    <div class="container">
+      <div class="row" style="margin-top: 25%">
+        <div class="one-half column">
+          <h4>Welcome</h4>
+          <p>There really isn't much here. As I work on projects I may add them. Click a button to the right to see the tool.</p>
+        </div>
+        <div glass="two columns">
+          <button id="showbdsm">BDSM Comparor</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="invis" id="bdsmsection">
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          <h5>BDSMtest.org comparor</h5>
+          <p>Compare two results of tests taken at <a href="http://bdsmtest.org">bdsmtest.org</a>.</p>
+        </div>
+        <div class="three columns">
+          <input type="text" placeholder="Name 1" id="name1"></input>
+          <textarea placeholder="Test results" id="test1"></textarea>
+        </div>
+        <div class="three columns">
+          <input type="text" placeholder="Name 2" id="name2"></input>
+          <textarea placeholder="Test results" id="test2"></textarea>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="eight columns">
+          <p></p>
+          <table class="invis" id="bdsmtable">
+            <thead>
+              <tr>
+                <th id="thname1"></th>
+                <th colspan="2" text-align="center">Kinks</th>
+                <th id="thname2" text-align="right"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- JS stuff will go here when generated !-->
+            </tbody>
+          </table>
+        </div>
+        <div class="two columns">
+          <button class="invis" id="bdsmbutton">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
